@@ -7,20 +7,45 @@
     <title>Welcome to kokoatalk</title>
 </head>
 <body>
-    <div id="status-bar">
+    <div class="status-bar">
         <div class="status__column">
             <span>No Service</span>
-            <!-- To do: Wifi Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
+              </svg>
         </div>
         <div class="status__column">
             <span>18:43</span>
         </div>
         <div class="status__column">
             <span>11%</span>
-            <!-- battery icon-->
-            <!-- Lightning icon-->
+            <i class="fa-solid fa-battery-low"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M192 320H96V192H192V320zM0 176C0 131.8 35.82 96 80 96H464C508.2 96 544 131.8 544 176V192C561.7 192 576 206.3 576 224V288C576 305.7 561.7 320 544 320V336C544 380.2 508.2 416 464 416H80C35.82 416 0 380.2 0 336V176zM80 160C71.16 160 64 167.2 64 176V336C64 344.8 71.16 352 80 352H464C472.8 352 480 344.8 480 336V176C480 167.2 472.8 160 464 160H80z"/></svg>
         </div>
     </div>
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcome to CoCoaClone</h1>
+        <p class="welcome-header__text">If you have a CoCoaClone, log in with your email or phone number.
+        </p>
+        <form id="login-form">
+        <input type="text" placeholder="Email or phone number"/>
+        <input type="password" placeholder="Password"/>
+        <input type="submit" value="Log  In"/>
+        <input type="submit" value="Sign Up"/>
+        <!-- 버튼을 추가할 때, inputtype="submit"을 사용하는 방법이 있고,button을 사용하는 방법이있다. -->
+        <a herf="#">Find CoCoaClone Account or Password</a>
+        </form>
+
+    </header>
+    <script src="https://kit.fontawesome.com/9c93346761.js" crossorigin="anonymous"></script>
 </body>
 </html>
 <!-- 오늘 배운 것,!단축키,스테이터스바 채우기,주석문 id와 class쓰기, 이름 쓸 때 길게 쓰기(나중을 위해)-->
+<!--07.24 
+    이론적으로는 id도 쓰는데,css 작성 중에 혼선을 빚는 일이 잦기 때문에 class를 사용한다.
+    BEM BEM.BEM.BEM.이란 css를 쉽게 만들어주는 양식같은 것 ex)pussy,pussy__hi(언더바두번)pussy--hi(-두번)
+    아이콘. heroicons,awesomefont.
+    어썸폰트는 쓰는방식이 특이한데,일단 body 마지막란에 자바스크립트문을 삽입한 후, 사이트에서 링크를 복사하여 사용한다!
+    *alt 누르고 입력시 한번에 여러개 입력가능.
+    form, input type="text" placeholder, input type="password" placeholder="password"/>(닫을 떄 />기억하자!)
+    a herf="#">(링크에 대한 텍스트 삽입가능)</a>-->
